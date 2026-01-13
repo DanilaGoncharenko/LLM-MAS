@@ -11,7 +11,7 @@ Lab2 Danila Goncharenko Мультиагентная система
 ---
 
 ## 1) Архитектура системы
-![Graph pipeline](lab_2.png)
+![Graph pipeline](lab2.png)
 
 ### Агенты и роли
 
