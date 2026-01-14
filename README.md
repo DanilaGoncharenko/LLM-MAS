@@ -49,6 +49,7 @@ pip install -r requirements.txt
 MODEL_NAME = os.getenv("OPENAI_MODEL_NAME", "qwen3-32b")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "ваш ключ")
 OPENAI_API_BASE = os.getenv("OPENAI_API_BASE", "http://10.32.15.89:34000/v1")
+NOTES_PATH = os.getenv("NOTES_PATH", "user_notes.json")
 ```
 ## 4) Запуск системы
 ```python
