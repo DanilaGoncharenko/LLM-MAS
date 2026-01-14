@@ -53,7 +53,8 @@ NOTES_PATH = os.getenv("NOTES_PATH", "user_notes.json")
 ```
 ## 4) Запуск системы
 ```python
-from src.graph import run_system, build_graph_with_retry_loop, show_graph
+from src.graph import run_system, run_experiments
+from src.graph import build_graph_with_retry_loop, show_graph
 
 # Mermaid-диаграмма графа
 app = build_graph_with_retry_loop()
@@ -67,4 +68,7 @@ print("nodes:", out["activated_nodes"])
 print("handoff:", out["handoff_log"])
 print("tools_used:", len(out["tool_calls"]))
 print("memory:", out["memory_summary"])
+
+exp = run_experiments()
+print(json.dumps(exp, ensure_ascii=False, indent=2))
 ```
