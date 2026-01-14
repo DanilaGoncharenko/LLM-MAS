@@ -53,7 +53,7 @@ NOTES_PATH = os.getenv("NOTES_PATH", "user_notes.json")
 ```
 ## 4) Запуск системы
 ```python
-from src.graph import run_system, run_experiments
+from src.experiments import run_system, run_experiments
 from src.graph import build_graph_with_retry_loop, show_graph
 
 # Mermaid-диаграмма графа
